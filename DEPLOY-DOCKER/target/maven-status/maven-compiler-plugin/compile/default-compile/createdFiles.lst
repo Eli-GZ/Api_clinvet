@@ -1,0 +1,11 @@
+com\example\CRUD\service\PersonaService.class
+com\example\CRUD\model\Persona.class
+com\example\CRUD\model\Mascota.class
+com\example\CRUD\repository\IPersonaRepository.class
+com\example\CRUD\controller\PersonaController.class
+com\example\CRUD\service\IMascotaService.class
+com\example\CRUD\controller\MascotaController.class
+com\example\CRUD\service\IPersonaService.class
+com\example\CRUD\service\MascotaService.class
+com\example\CRUD\repository\IMascotaRepository.class
+com\example\CRUD\CrudApplication.class
