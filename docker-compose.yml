@@ -8,21 +8,21 @@ services:
     ports:
       - "8080:8080"
     environment:
-      DB_URL: jdbc:mysql://100.20.92.101:3306/prueba_jpa?createDatabaseIfNotExist=true&serverTimezone=UTC
-      DB_USER_NAME: root
-      DB_PASSWORD: 1234
+      DB_URL: jdbc:mysql://dpg-cvf2k39opnds73cp7md0-a:3306/prueba_jpa?createDatabaseIfNotExist=true&serverTimezone=UTC
+      DB_USER_NAME: prueba_jpa_user
+      DB_PASSWORD: SYuAJHIdwtXKhMbe8cCQBucEaoj4M81Q
     restart: always
     depends_on:
-      100.20.92.101:
+      dpg-cvf2k39opnds73cp7md0-a:
         condition: service_healthy
 
-  100.20.92.101:
+  dpg-cvf2k39opnds73cp7md0-a:
     image: mysql:8.3.0
     ports:
       - "3307:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: 1234      
-      MYSQL_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: SYuAJHIdwtXKhMbe8cCQBucEaoj4M81Q      
+      MYSQL_PASSWORD: SYuAJHIdwtXKhMbe8cCQBucEaoj4M81Q
       MYSQL_DATABASE: prueba_jpa
     restart: always
     healthcheck:
