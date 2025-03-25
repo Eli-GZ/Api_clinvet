@@ -8,9 +8,9 @@ services:
     ports:
       - "8080:8080"
     environment:
-      DB_URL: jdbc:mysql://dpg-cvf2k39opnds73cp7md0-a:3306/prueba_jpa?createDatabaseIfNotExist=true&serverTimezone=UTC
-      DB_USER_NAME: prueba_jpa_user
-      DB_PASSWORD: SYuAJHIdwtXKhMbe8cCQBucEaoj4M81Q
+      DB_URL: jdbc:mysql://root:hCHVlhZzdvCkvqLHRqOCfFXhpAwbnmQE@mysql.railway.internal:3306/railway&serverTimezone=UTC
+      DB_USER_NAME: root
+      DB_PASSWORD: hCHVlhZzdvCkvqLHRqOCfFXhpAwbnmQE
     restart: always
     depends_on:
       dpg-cvf2k39opnds73cp7md0-a:
